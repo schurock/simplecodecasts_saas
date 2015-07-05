@@ -1,7 +1,7 @@
 class ProfilesController < ApplicationController
     def new
         @user = User.find( params[:user_id]) #to identify the unique User
-        @profile = @user.build_profile
+        @profile = Profile.new
     end
     
     def create

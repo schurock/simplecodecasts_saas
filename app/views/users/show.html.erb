@@ -1,3 +1,5 @@
+
+<%= image_tag @user.profile.avatar.url %>
 <div> Name: <%= @user.profile.first_name %> <%= @user.profile.last_name %> </div><br/>
 <%= @user.profile.job_title %><br/>
 <% if current_user.plan_id == 2 %>
